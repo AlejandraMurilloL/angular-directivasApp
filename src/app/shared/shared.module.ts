@@ -1,12 +1,14 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { ErrorMsgDirective } from './directives/error-msg.directive';
 
 
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
+  declarations: [
+    ErrorMsgDirective
+  ],
+  exports: [
+    ErrorMsgDirective
   ]
 })
 export class SharedModule { }

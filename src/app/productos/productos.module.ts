@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { SharedModule } from '../shared/shared.module';
 import { AgregarComponent } from './pages/agregar/agregar.component';
 import { ProductosRoutingModule } from './productos-routing.module';
 
@@ -13,7 +14,8 @@ import { ProductosRoutingModule } from './productos-routing.module';
   imports: [
     CommonModule,
     ProductosRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule
   ]
 })
 export class ProductosModule { }
