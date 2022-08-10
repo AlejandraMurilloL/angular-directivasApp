@@ -21,10 +21,11 @@ export class AgregarComponent {
   }
 
   changeMsg(): void {
-    this.msgError = 'Maria Lara';
+    this.msgError = Math.random().toString();
   }
 
   changeColor(): void {
-    this.color = 'green';
+    const color = "#xxxxxx".replace(/x/g, y=>(Math.random()*16|0).toString(16));
+    this.color = color;
   }
 }
