@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AgregarComponent } from './pages/agregar/agregar.component';
 import { ProductosRoutingModule } from './productos-routing.module';
@@ -11,7 +12,8 @@ import { ProductosRoutingModule } from './productos-routing.module';
   ],
   imports: [
     CommonModule,
-    ProductosRoutingModule
+    ProductosRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class ProductosModule { }
