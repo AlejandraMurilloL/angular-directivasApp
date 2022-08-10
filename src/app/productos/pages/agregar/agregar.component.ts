@@ -7,6 +7,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class AgregarComponent {
 
+  msgError: string = 'Alejandra Murillo';
+  color: string = 'red';
+
   form: FormGroup = this.fb.group({
     nombre: ['', Validators.required ]
   });
@@ -15,5 +18,13 @@ export class AgregarComponent {
 
   tieneError(campo: string): boolean {
     return this.form.get(campo)?.invalid || false;
+  }
+
+  changeMsg(): void {
+    this.msgError = 'Maria Lara';
+  }
+
+  changeColor(): void {
+    this.color = 'green';
   }
 }

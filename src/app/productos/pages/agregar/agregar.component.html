@@ -12,6 +12,8 @@
         <div class="col-auto">
             <span 
                 *ngIf="tieneError('nombre')" 
+                [msg]="msgError"
+                [color]="color"
                 error-msg >
             </span>
         </div>
@@ -19,7 +21,8 @@
 
     <div class="row mt-3">
         <div class="col">
-            <button class="btn btn-primary">Guardar</button>
+            <button class="btn btn-primary" (click)="changeMsg()">Guardar</button>
+            <button class="btn btn-primary" (click)="changeColor()">Cambiar color</button>
         </div>
     </div>
 </form>
